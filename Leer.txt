@@ -1,0 +1,3 @@
+¡Hola Ing!
+¡Buenas días, tardes o noches!
+Solo quería comentarle que la opción de borrar un digito del label esta al hacer click sobre la caja de texto
