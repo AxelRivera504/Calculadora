@@ -408,11 +408,13 @@ public class Calculadora extends javax.swing.JFrame {
             case "":
             numero1 = Double.parseDouble(TxtResultado.getText());
             verificarSetearResultado((numero1 / 100));
+            operador[1] = "=";
             break;
             case "+":
             double numeroPorcentaje = numero2 / 100;
             double porcentaje = numero1 * numeroPorcentaje;
             verificarSetearResultado(numero1 + porcentaje);
+            operador[1] = "=";
             break;
             case "-":
             System.out.println("Hacemos calculo");
@@ -420,11 +422,13 @@ public class Calculadora extends javax.swing.JFrame {
             double numeroPorcentajeResta = numero2 / 100;
             double porcentajeResta = numero1 * numeroPorcentajeResta;
             verificarSetearResultado(numero1 - porcentajeResta);
+            operador[1] = "=";
             break;
             case "X":
             double numeroPorcentajeMultiplicacion = numero2 / 100;
             double porcentajeMultiplicacion = numero1 * numeroPorcentajeMultiplicacion;
             verificarSetearResultado(porcentajeMultiplicacion);
+            operador[1] = "=";
             break;
             case "/":
             if(numero2 == 0)
@@ -433,6 +437,7 @@ public class Calculadora extends javax.swing.JFrame {
                 double numeroPorcentajeDivision = numero2 / 100;
                 double porcentajeDivision = numero1 * numeroPorcentajeDivision;
                 verificarSetearResultado(numero1 / porcentajeDivision);
+                operador[1] = "=";
             }
             break;
             default:
